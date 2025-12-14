@@ -1,0 +1,219 @@
+.sites-page {
+  min-height: 100vh;
+  padding: 60px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.sites-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 48px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.sites-header-content {
+  flex: 1;
+}
+
+.sites-page-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sites-page-title .gradient-text {
+  filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.4));
+}
+
+.sites-page-description {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.refresh-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, rgba(15, 30, 58, 0.6) 0%, rgba(26, 47, 74, 0.4) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.refresh-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(15, 30, 58, 0.8) 0%, rgba(26, 47, 74, 0.6) 100%);
+  border-color: rgba(6, 182, 212, 0.5);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 24px rgba(6, 182, 212, 0.3),
+    0 0 15px rgba(34, 211, 238, 0.2);
+}
+
+.refresh-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.refresh-button svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.refresh-button:hover:not(:disabled) svg {
+  transform: rotate(180deg);
+}
+
+.error-message {
+  margin-bottom: 32px;
+  padding: 16px 20px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 12px;
+  color: var(--danger-color);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.error-message svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.sites-loading {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.sites-empty {
+  text-align: center;
+  padding: 100px 20px;
+  color: var(--text-muted);
+}
+
+.sites-empty svg {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 32px;
+  opacity: 0.5;
+  color: var(--text-muted);
+}
+
+.sites-empty h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.sites-empty p {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 30%, #38bdf8 60%, #0ea5e9 100%);
+  background-size: 200% 200%;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 
+    0 8px 24px rgba(6, 182, 212, 0.4),
+    0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 32px rgba(6, 182, 212, 0.6),
+    0 0 30px rgba(34, 211, 238, 0.4);
+  background-position: 100% 50%;
+}
+
+.sites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@media (max-width: 768px) {
+  .sites-page {
+    padding: 40px 0 60px;
+  }
+
+  .sites-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .sites-page-title {
+    font-size: 36px;
+  }
+
+  .sites-page-description {
+    font-size: 16px;
+  }
+
+  .sites-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .refresh-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sites-page-title {
+    font-size: 32px;
+  }
+
+  .sites-empty h3 {
+    font-size: 24px;
+  }
+
+  .sites-empty p {
+    font-size: 16px;
+  }
+}
+
