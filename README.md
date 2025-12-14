@@ -282,6 +282,8 @@ Serkan Gürcan
 
 <img width="1100" height="563" alt="image" src="https://github.com/user-attachments/assets/9f614336-d3d3-45c3-bfe4-46dd71b6864b" />
 <img width="1916" height="943" alt="image" src="https://github.com/user-attachments/assets/20a2a2e0-734a-4c12-9ab2-7276eaa1c608" />
-![Uploading image.png…]()
+<img width="1912" height="940" alt="Ekran görüntüsü 2025-12-14 225135" src="https://github.com/user-attachments/assets/ceca65dc-52e7-4057-a3ea-83cf4f4bf107" />
+
+
 
 
