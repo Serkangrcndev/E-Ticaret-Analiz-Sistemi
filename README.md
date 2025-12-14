@@ -280,3 +280,8 @@ Serkan Gürcan
 
 **Not**: Bu proje geliştirme aşamasındadır. Production kullanımı için ek güvenlik ve optimizasyon önlemleri alınmalıdır.
 
+<img width="1100" height="563" alt="image" src="https://github.com/user-attachments/assets/9f614336-d3d3-45c3-bfe4-46dd71b6864b" />
+<img width="1916" height="943" alt="image" src="https://github.com/user-attachments/assets/20a2a2e0-734a-4c12-9ab2-7276eaa1c608" />
+![Uploading image.png…]()
+
+
