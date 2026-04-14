@@ -2,7 +2,7 @@
 
 Bu proje, web sitelerinin güvenlik ve itibar analizini yapmak için geliştirilmiş bir web scraping ve analiz platformudur. Farklı kaynaklardan (Şikayetvar, Trustpilot, Google Reviews) toplanan verileri analiz ederek sitelerin risk skorlarını hesaplar ve kullanıcı dostu bir arayüzle sunar.
 
-## 🎯 Özellikler
+## Özellikler
 
 - **Çoklu Kaynak Desteği**: Şikayetvar, Trustpilot ve Google Reviews'den otomatik veri toplama
 - **Risk Analizi**: Toplanan verilere göre otomatik risk skoru hesaplama
@@ -12,7 +12,7 @@ Bu proje, web sitelerinin güvenlik ve itibar analizini yapmak için geliştiril
 - **Veritabanı Yönetimi**: SQL Server ile güvenli veri saklama
 - **Çözümlenmiş/Çözülmemiş Takibi**: Şikayetlerin çözüm durumunu takip etme
 
-## 🛠️ Teknolojiler
+## Teknolojiler
 
 ### Backend
 - **Python 3.x**
@@ -40,7 +40,7 @@ Bu proje, web sitelerinin güvenlik ve itibar analizini yapmak için geliştiril
 - Node.js 16+
 - npm veya yarn
 
-## 🚀 Kurulum
+## Kurulum
 
 ### 1. Backend Kurulumu
 
@@ -97,7 +97,7 @@ yarn install
 
 Frontend'in backend'e bağlanabilmesi için `frontend/src/services/api.js` dosyasındaki API URL'ini kontrol edin.
 
-## 🎮 Kullanım
+## Kullanım
 
 ### Backend'i Başlatma
 
@@ -249,7 +249,7 @@ Yeni sütun veya tablo eklemek için:
 - **Güvenlik**: `.env` dosyasını `.gitignore`'a ekleyin ve hassas bilgileri commit etmeyin
 - **Veritabanı**: SQL Server bağlantı pool'u kullanılarak performans optimize edilmiştir
 
-## 🐛 Sorun Giderme
+## Sorun Giderme
 
 ### Veritabanı Bağlantı Hatası
 - SQL Server'ın çalıştığından emin olun
@@ -271,10 +271,6 @@ Yeni sütun veya tablo eklemek için:
 ## 📝 Lisans
 
 Bu proje özel bir projedir.
-
-## 👤 Geliştirici
-
-Serkan Gürcan
 
 ---
 
